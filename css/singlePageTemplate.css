@@ -193,8 +193,6 @@ ul li:hover a {
 .services {
 	text-align: center;
 	background: #FFFFFF;
-	margin-left: 15vw;
-	margin-right: 15vw;
 }
 .service_header {
 	text-align: center;
@@ -204,40 +202,33 @@ ul li:hover a {
 	margin: auto;
 	/*margin-color: #FFFFFF;*/
 }
+.services-table{
+	display: flex;
+	justify-content: center;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	border-collapse: separate;
+	border-spacing: 7vh 0px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.services-img {
+	margin: 0;
+	width: 6vw;
+	height: 6vw;
+}
+.services ul li:first-child {
+    margin-left: 0; /* Removes margin from the last item */
+}
+.services ul li:last-child {
+    margin-right: 0; /* Removes margin from the last item */
+}
 .services_sub{
-	margin-left: 15vw;
-	margin-right: 15vw;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	display: inline-block;
-	background-color: #FFFFFF;
-	margin-top: 0px;
+	text-align: center;
 }
-.services_sub_header_left{
-	text-align: left;
+.services_sub_header{
+	text-align: center;
 	font-size: 30px;
-}
-.services_sub_text_left{
-	text-align: left;
-	font-weight: normal;
-	padding-top: 0px;
-	padding-bottom: 40px;
-	margin-right: 36%;
-	line-height: 25px;
-	color: #888888;
-}
-.services_sub_header_right{
-	text-align: right;
-	font-size: 30px;
-}
-.services_sub_text_right{
-	text-align: right;
-	font-weight: normal;
-	padding-top: 0px;
-	padding-bottom: 40px;
-	margin-left: 36%;
-	line-height: 25px;
-	color: #888888;
 }
 /* Parallax Section */
 .banner {
