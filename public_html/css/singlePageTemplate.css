@@ -193,15 +193,18 @@ ul li:hover a {
 .services {
 	text-align: center;
 	background: #FFFFFF;
-	margin-left: 15vw;
-	margin-right: 15vw;
+}
+.services_header_div{
+	height: 15vh;
+	position: relative;
 }
 .service_header {
 	text-align: center;
 	font-size: 50px;
 	padding-top: 45px;
 	padding-bottom: 45px;
-	margin: auto;
+	margin-left: 15vw;
+	margin-right: 15vw;
 	/*margin-color: #FFFFFF;*/
 }
 .services_sub{
@@ -216,6 +219,17 @@ ul li:hover a {
 .services_sub_header_left{
 	text-align: left;
 	font-size: 30px;
+	padding-top: 40px;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	color: white;
+	opacity: 0;
+	animation: slideFromLeft 1.5s ease-in-out forwards;
+	animation-delay: inherit;
+}
+
+.black{
+	background-color: black;
 }
 .services_sub_text_left{
 	text-align: left;
@@ -224,11 +238,20 @@ ul li:hover a {
 	padding-bottom: 40px;
 	margin-right: 36%;
 	line-height: 25px;
-	color: #888888;
+	color: #AAAAAA;
+	margin-left: 15vw;
+	opacity: 0;
+	animation: slideFromLeft 1.5s ease-in-out forwards;
+	animation-delay: inherit;
 }
 .services_sub_header_right{
 	text-align: right;
 	font-size: 30px;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	opacity: 0;
+	animation: slideFromRight 1.5s ease-in-out forwards;
+	animation-delay: inherit;
 }
 .services_sub_text_right{
 	text-align: right;
@@ -236,8 +259,24 @@ ul li:hover a {
 	padding-top: 0px;
 	padding-bottom: 40px;
 	margin-left: 36%;
+	margin-right: 15vw;
 	line-height: 25px;
-	color: #888888;
+	color: #333333;
+	opacity: 0;
+	animation: slideFromRight 1.5s ease-in-out forwards;
+	animation-delay: inherit;
+}
+.sOne{
+	animation-delay: 0s;
+}
+.sTwo{
+	animation-delay: 1s;
+}
+.sThree{
+	animation-delay: 2s;
+}
+.sFour{
+	animation-delay: 3s;
 }
 /* Parallax Section */
 .banner {
@@ -603,4 +642,24 @@ nav ul li {
 	margin-top: 0px;
 	padding-top: 0px;
 }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-15vw);
+	  opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+	  opacity: 100%;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(15vw);
+	  opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+	  opacity: 100%;
+  }
 }
